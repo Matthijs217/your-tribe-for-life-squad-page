@@ -1,3 +1,18 @@
+    @font-face {
+        font-family: "Monomaniac One";
+        src: url("/fonts/MonomaniacOne-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    /* Secondary font */
+    @font-face {
+        font-family: "Exo 2";
+        src: url("/fonts/Exo2-Regular.ttf") format("truetype");
+        font-weight: 400;
+        font-style: normal;
+    }
+
 main {
     --light-color-gradient: #D3FFE5;
     --medium-color-gradient: #289797;
@@ -7,11 +22,15 @@ main {
 }
 
 h1 {
-    font-size: clamp(4rem, 6vw, 10rem);
+    font-size: clamp(4rem, 4vw, 10rem);
+    font-family: "Monomaniac One";
 }
 
 ul {
     list-style-type: none;
+}
+li, a {
+    font-family: "Exo 2";
 }
 
 img {
